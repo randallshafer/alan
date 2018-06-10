@@ -1,0 +1,10 @@
+version: "3"
+services:
+  apacheds:
+    build: ./apacheds
+    ports:
+      - "389:10389"
+      - "636:10636"
+      - "88:60088"
+      - "80:8080"
+      - "443:8443"
