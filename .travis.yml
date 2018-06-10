@@ -1,0 +1,7 @@
+language: go
+go:
+  - "1.10"
+# Skip install step
+install: true
+script:
+  docker-compose build
