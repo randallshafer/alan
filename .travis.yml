@@ -1,7 +1,7 @@
-language: go
-go:
-  - "1.10"
-# Skip install step
+language: python
+python:
+  - "3.9"
+# Skip install phase
 install: true
-script:
-  docker-compose build
+# Build phase
+script: make build && make test
