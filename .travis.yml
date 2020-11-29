@@ -11,4 +11,6 @@ python:
 
 install: skip
 
-script: make build && make test
+script:
+  - docker-compose -v
+  - make build && make test
