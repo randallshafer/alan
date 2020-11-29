@@ -1,7 +1,14 @@
+arch:
+  - amd64
+  - arm64
+
 language: python
+
+os: linux
+
 python:
   - "3.9"
-# Skip install phase
-install: true
-# Build phase
+
+install: skip
+
 script: make build && make test
