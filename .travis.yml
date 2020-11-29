@@ -13,4 +13,4 @@ install: skip
 
 script:
   - docker-compose -v
-  - make build && make test
+  - make build
