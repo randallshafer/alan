@@ -1,7 +1,16 @@
+arch:
+  - amd64
+  - arm64
+
 language: python
+
+os: linux
+
 python:
   - "3.9"
-# Skip install phase
-install: true
-# Build phase
-script: make build && make test
+
+install: skip
+
+script:
+  - docker-compose -v
+  - make build
